@@ -77,8 +77,42 @@ position: relative;
     left: 0;
     background:#fff;
     color: #069988;
-    border: 2px solid black ;
+    border: 2px solid ;
     /* z-index: -1; */
     transition: 0.8s;
 }
+.side_nav{
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background:#069988;
+    z-index: 2;
 
+
+}
+.side_nav ul li{
+    list-style: none;
+    margin: 50px 20px;
+}
+.side_nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+.menu_btn{
+    width: 50px;
+    height: 50px;
+    background: #069988;
+    text-align: center;
+    position: fixed;
+    right: 30px;
+    top: 20px;
+    border-radius: 3px;
+    z-index: 3;
+    cursor: pointer;
+}
+.menu_btn img{
+    width: 20px;
+    margin-top: 50px;
+}
