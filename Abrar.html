@@ -11,6 +11,8 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css"
     />
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
   </head>
   <body>
     <section class="banner" id="banner">
@@ -32,19 +34,19 @@
     <div class="side_nav" id="side_nav">
       <nav>
         <ul>
-          <li><a href="#">Home</a></li>
+          <li><a href="#banner">Home</a></li>
         </ul>
         <ul>
-          <li><a href="#">Features</a></li>
+          <li><a href="#feature">Features</a></li>
         </ul>
         <ul>
-          <li><a href="#">Service</a></li>
+          <li><a href="#service">Service</a></li>
         </ul>
         <ul>
-          <li><a href="#">Testimonital</a></li>
+          <li><a href="#Testimonital">Testimonital</a></li>
         </ul>
         <ul>
-          <li><a href="#">Meet Us</a></li>
+          <li><a href="#footer">Meet Us</a></li>
         </ul>
       </nav>
     </div>
@@ -215,9 +217,31 @@
 
 
     <section class="footer" id="footer">
+      <img src="./img/footer-img.png" class="footer_img">
       <div class="title_text">
         <p>CONTACT</p>
         <h1>Visit Shop Today</h1>
+      </div>
+      <div class="footer_row">
+        <div class="footer_left">
+          <h1>Opening Hours</h1> 
+          <p>Monday to Friday - 9am to 9pm <img class="footer_icon" src="./img/clock.svg" > </p>
+          <p>Saturday to Sunday - 8am to 11pm  <img src="./img/clock.svg" class="footer_icon"></p>
+        </div>
+        <div class="footer_right">
+          <h1>Get in Touch</h1>
+          <p>#ZamZam Colony, Fsd Road Samundri  <img src="./img/map-pin.svg" class="footer_icon"> </p>
+          <p>hammadhabib@gmail.com  <img src="./img/send.svg" class="footer_icon"></p>
+          <p>+92 335 6226026  <img src="./img/phone.svg" class="footer_icon"></p>
+
+        </div>
+      </div>
+      <div class="social__fotter_links">
+        <a class="social_img_____all" href="https://twitter.com/hammadhabib6"><img src="./img/twitter.svg" ></a>
+        <a class="social_img_____all"  href="https://instagram.com/hammadhabibofficial"><img src="./img/instagram.svg" ></a>
+        <a class="social_img_____all" href="https://youtube.com/hammadhabib "><img src="./img/youtube.svg" ></a>
+        <a class="social_img_____all" href="https://facebook.com/hammadhabibofficial"><img src="./img/facebook.svg" ></a>
+          <p>Create By Abrar Khalid❤️ </p>
       </div>
     </section>
 
@@ -233,6 +257,11 @@
           console.log("close");
         }
       }
+   
+var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 1000,
+	speedAsDuration: true
+});
     </script>
 
 
