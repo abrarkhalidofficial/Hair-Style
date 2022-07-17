@@ -7,40 +7,172 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hair Style</title>
     <link rel="stylesheet" href="./Style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css"
+    />
   </head>
   <body>
     <section class="banner" id="banner">
-        <img class="logo_img" src="./img/image-removebg-preview (2).png" alt="">
-   <img src="img/banner.jpg" alt="banner" class="banner__img">
-  
-   <div class="banner__overlay">
-    <div class="banner__text">
-        <h1>Hair Studio</h1>
-        <p>Style Your Hair Is Style Your Life </p>
-        <div class="banner__btn">
+      <img class="logo_img" src="./img/image-removebg-preview (2).png" alt="" />
+      <img src="img/banner.jpg" alt="banner" class="banner__img" />
+
+      <div class="banner__overlay">
+        <div class="banner__text">
+          <h1>Hair Studio</h1>
+          <p>Style Your Hair Is Style Your Life</p>
+          <div class="banner__btn">
             <a class="banner__btn_a" href="#"> <span></span> Find Out </a>
             <a class="banner__btn_a" href="#"><span></span> Read More</a>
+          </div>
         </div>
-       </div>
-   </div>
+      </div>
     </section>
 
+    <div class="side_nav" id="side_nav">
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Features</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Service</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Testimonital</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Meet Us</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="menu_btn" id="menu_btn" onclick="menuControl()">
+      <img class="menu" src="./img/menu.png" id="menu" />
+    </div>
 
-   
-      <div class="side_nav" id="side_nav">
-        <nav>
-          <ul><li><a href="#">Home</a></li> </ul>
-          <ul><li><a href="#">Features</a></li> </ul>
-          <ul><li><a href="#">Service</a></li> </ul>
-          <ul><li><a href="#">Testimonital</a></li> </ul>
-          <ul><li><a href="#">Meet Us</a></li> </ul>
-        </nav>
+    <section class="feature" id="feature">
+      <div class="title_text">
+        <p>Features</p>
+        <h1>Why Choose Us</h1>
       </div>
-      <div class="menu_btn">
-        <img class="menu" src="./img/menu.png" id="menu">
+      <div class="feature_box">
+        <div class="Features">
+          <h1>Experienced Staff</h1>
+          <div class="feature_dec">
+            <div class="feature_icon">
+              <img class="svg_icon" src="./img/shield.svg" />
+              <!-- <i class="fa-solid fa-shield-halved"></i> -->
+            </div>
+            <div class="feature_text"></div>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo
+              molestias, tenetur amet voluptatum ipsum
+            </p>
+          </div>
+          <h1>Pre Booking Online</h1>
+          <div class="feature_dec">
+            <div class="feature_icon">
+              <img class="svg_icon" src="./img/check-square.svg" />
+              <!-- <i class="fa-solid fa-shield-halved"></i> -->
+            </div>
+            <div class="feature_text"></div>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo
+              molestias, tenetur amet voluptatum ipsum
+            </p>
+          </div>
+          <h1>Affordable Cost</h1>
+          <div class="feature_dec">
+            <div class="feature_icon">
+              <img class="svg_icon" src="./img/dollar-sign.svg" />
+              <!-- <i class="fa-solid fa-shield-halved"></i> -->
+            </div>
+            <div class="feature_text"></div>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo
+              molestias, tenetur amet voluptatum ipsum
+            </p>
+          </div>
+        </div>
+        <div class="feature_img">
+          <img src="./img/hair-man.jpg" alt="" />
+        </div>
       </div>
+    </section>
 
-      <script>
+    <section class="service" id="service">
+      <div class="title_text">
+        <p>Service</p>
+        <h1>We Provide Better</h1>
+      </div>
+      <div class="service_box">
+        <div class="single_service">
+          <img src="./img/pic-1.jpg" />
+          <div class="overlay"></div>
+          <div class="service_dec">
+            <h3>Hair Styling</h3>
+            <hr />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates est cum asperiores
+            </p>
+          </div>
+        </div>
+        <div class="single_service">
+          <img src="./img/pic-2.jpg" />
+          <div class="overlay"></div>
+          <div class="service_dec">
+            <h3>Beard Trim</h3>
+            <hr />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates est cum asperiores
+            </p>
+          </div>
+        </div>
+        <div class="single_service">
+          <img src="./img/pic-3.jpg" />
+          <div class="overlay"></div>
+          <div class="service_dec">
+            <h3>Hair Cut</h3>
+            <hr />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates est cum asperiores
+            </p>
+          </div>
+        </div>
+        <div class="single_service">
+          <img src="./img/pic-4.jpg" />
+          <div class="overlay"></div>
+          <div class="service_dec">
+            <h3>Dry Shampo</h3>
+            <hr />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates est cum asperiores
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script async>
+      var side_nav = document.getElementById("side_nav");
+      function menuControl() {
+        if (side_nav.style.display === "none") {
+          side_nav.style.display = "flex";
+          console.log("open");
+        } else {
+          side_nav.style.display = "none";
+          console.log("close");
+        }
+      }
+    </script>
+
+    <!-- <script>
         var menu_btn =document.getElementById("menu_btn")
         var side_nav =document.getElementById("side_nav")
         var menu =document.getElementById("menu")
@@ -52,6 +184,6 @@
             side_nav.Style.right=="-250px"
           }
         }
-      </script>
+      </script> -->
   </body>
 </html>
