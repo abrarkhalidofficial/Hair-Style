@@ -255,6 +255,7 @@ background: #efefef ;
 .single_service img{
     width: 100%;
     border-radius: 7px;
+    
 
 }
 /* .overlay{
@@ -278,4 +279,36 @@ background: #efefef ;
     bottom: 40%;
     left: 50%;
     transform: translate(-50%);
+    opacity: 0;
  } */
+.service_dec h3{
+    color: #069988;
+}
+.service_dec p{
+    color: black;
+    font-size: 14px;
+}
+.service_dec hr{
+    background: #fff;
+    height: 2px;
+    border: 0;
+    margin: 15px auto;
+    width: 60%;
+}
+@media screen  and (max-width: 770px){
+    .single_service{
+        flex-basis: 200%;
+   
+        margin-bottom: 30px;
+        color: #fff ;
+     
+    }
+    .service_dec p{
+        color: black;
+        font-size: 12px;
+    }
+    .single_service{
+        width: 200px;
+    }
+
+}
