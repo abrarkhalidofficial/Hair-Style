@@ -250,42 +250,57 @@ background: #efefef ;
     border-radius: 7px;
     margin-bottom: 20px;
     color: #fff ;
-    /* position:relative; */
+    position:relative;
 }
+
 .single_service img{
     width: 100%;
     border-radius: 7px;
     
 
 }
-/* .overlay{
+.overlay{
     height: 100%;
-    width:  100px;
+    width:  100%;
     position: absolute;
     top: 0;
+    left: 0;
     border-radius: 7px;
     cursor: pointer;
-    background: linear-gradient(rgba(0,0,0,0.5) #069988);
+    background: linear-gradient(rgba(0,0,0,.5),#069988);
      opacity: 0;
-     transition: 1s;
+     transition: all .5s ease-in-out;
      
-} */
+}
+.single_service:hover{
+    transform: scale(1.06);
+    /* transition: 1s; */
+    transition: all 1s ;
+    /* box-shadow: 0 10px 20px 3px #07e7d114; */
+
+
+}
 .single_service:hover .overlay{
     opacity: 1;
  }
- /* .service_dec{
+ .service_dec{
     width: 80%;
     position: absolute;
     bottom: 40%;
     left: 50%;
     transform: translate(-50%);
     opacity: 0;
- } */
+    transition: all .5s ease-in-out;
+ }
+ .single_service:hover .service_dec{
+    opacity: 1;
+ }
 .service_dec h3{
     color: #069988;
+    font-size: 35px;
 }
 .service_dec p{
-    color: black;
+    color: white;
     font-size: 14px;
 }
 .service_dec hr{
@@ -352,7 +367,7 @@ background: #efefef ;
 
 }
 .user img{
-    width: 40px;
+    width: 50px;
     margin-right: 20px;
     border-radius: 3px ;
 }
@@ -426,7 +441,7 @@ background: #efefef ;
     opacity: 0.1;
     position: absolute;
     left: 50%;
-    top: 35%;
+    top: 50%;
     transform: translate(-50%,-50%);
 
 }
@@ -438,8 +453,8 @@ background: #efefef ;
 .social_img_____all{
     /* height: 20px;
     width: 30px; */
-    font-size: 27px;
-    line-height: 30px;
+    font-size: 30px;
+    line-height: 40px;
     border: 1px solid #069988;
     margin: 40px 5px 0;
     /* color: white; */
@@ -450,13 +465,16 @@ background: #efefef ;
     color: red;
 }
 .social_img_____all:hover{
-    background-color: #069988;
+    /* background-color: #069988; */
     /* transform: translate(-7px); */
-
+    color: #069988;
+    /* cursor: pointer; */
+    background-color: #27c0ff;
 } 
 .social__fotter_links p{
     font-size: 12px;
     margin-top: 20px;
+    /* cursor: pointer; */
 }
 @media screen  and (max-width: 770px){
     .footer_left .footer_right{
