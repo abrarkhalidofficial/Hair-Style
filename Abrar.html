@@ -248,11 +248,15 @@
 
     <script async>
       var side_nav = document.getElementById("side_nav");
+      var side_nav_img = document.getElementById("menu");
+      side_nav.style.display = "none"
       function menuControl() {
         if (side_nav.style.display === "none") {
           side_nav.style.display = "flex";
           console.log("open");
+          side_nav_img.src='./img/close.png'
         } else {
+          side_nav_img.src='./img/menu.png'
           side_nav.style.display = "none";
           console.log("close");
         }

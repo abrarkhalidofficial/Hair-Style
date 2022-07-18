@@ -446,6 +446,9 @@ background: #efefef ;
     cursor: pointer;
      transition: .5s;
 }
+.social_img_____all svg{
+    color: red;
+}
 .social_img_____all:hover{
     background-color: #069988;
     /* transform: translate(-7px); */
